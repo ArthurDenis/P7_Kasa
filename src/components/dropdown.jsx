@@ -4,19 +4,16 @@ import "../styles/dropdown.css"
 
 const Dropdown = () => {
     const [open, setOpen] = useState(false);
-  
-    const handleOpen = () => {
-      setOpen(!open);
-    };
-  
-    return (
-      <div className="dropdown">
-        <div className="dropdown_main">
 
-        </div>
-        <div className="dropdown_text">
-          
-        </div>
+    return (
+      <div className={ "dropdown" + ( open ? 'open' : '' ) }>
+      <div className="dropdown_title" >
+          <img src="" alt="chevron-up" className={open ? 'dropdown_icon' : 'up' } onClick={ () => setOpen(!open )} />
+      </div>
+
+      {open &&
+          <div className="dropdown_text"></div>
+      }
       </div>
     );
   };

@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 1240px;
+    padding-top: 50px;
+    background: #F7F7F7;
+    border-radius: 25px;  
+}
+
+.gallery a {
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.gallery h2 {
+    height: 52px;
+    width: 300px;
+    left: 20px;
+    top: 260px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    color: #FFFFFF;
+    margin-right: 25px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+}
+
+a .image {
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    position: absolute;
+    object-fit: cover;
+    filter: invert(25%);
+}

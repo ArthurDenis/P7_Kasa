@@ -1,0 +1,39 @@
+.footer {
+    position: relative;
+    width: 1440px;
+    height: 209px;
+    background: #000000;
+}
+
+.footer p {
+    position: absolute;
+    left: 32.15%;
+    right: 32.22%;
+    top: 64.11%;
+    bottom: 13.88%; 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+    Width : 513px;
+    Height : 46px;
+    Top : 134px;
+    Left : 463px
+}
+
+.footer img {
+    Width : 122px;
+    Height : 39.44px;
+    Top:66px;
+    Left:659px;
+    position: absolute;
+    left: 45.76%;
+    right: 45.76%;
+    top: 31.58%;
+    bottom: 49.55%;    
+}

@@ -1,0 +1,20 @@
+.App {
+  box-sizing: border-box;
+  margin: 0 auto ;
+  padding: 0 auto ;
+  font-family: montserrat,'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  height : auto;
+}
+
+#root {
+  max-width: 1440px;
+  height: auto;
+  position: relative;
+  background: #FFFFFF;
+}
