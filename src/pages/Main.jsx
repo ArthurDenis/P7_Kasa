@@ -11,7 +11,7 @@ function Main ()
                 <h1>Chez vous, partout et ailleurs</h1>
                 <img src={banner} alt="Paysage de montagne" className="banner_Image"/>
             </div>
-            <div className="main_board">
+            <div className="gallery">
                 <div>
                     < Box />
                 </div>

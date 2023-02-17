@@ -1,20 +1,23 @@
-.App {
-  box-sizing: border-box;
-  margin: 0 auto ;
-  padding: 0 auto ;
-  font-family: montserrat,'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
   box-sizing: border-box;
 }
 
 body {
-  height : auto;
+  margin: 0 auto !important;
+  padding: 0 auto !important;
+  font-family: montserrat,'Helvetica Neue',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
-  max-width: 1440px;
-  height: auto;
+  max-width: auto;
+  height : auto;
   position: relative;
   background: #FFFFFF;
+}
+
+
+.App{
+  width: 100%;
 }
