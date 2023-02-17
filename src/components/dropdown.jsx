@@ -1,18 +1,20 @@
 import React, {useState} from 'react'
 import "../styles/dropdown.css"
+import vector from "../assets/vector.png"
 
 
-const Dropdown = () => {
-    const [open, setOpen] = useState(false);
+function Dropdown ( props )
+{
+    const [isOpen, setOpen] = useState(false);
 
     return (
-      <div className={ "dropdown" + ( open ? 'open' : '' ) }>
-      <div className="dropdown_title" >
-          <img src="" alt="chevron-up" className={open ? 'dropdown_icon' : 'up' } onClick={ () => setOpen(!open )} />
+      <div className={ "dropdown" + ( isOpen ? 'open' : '' ) }>
+      <div className="dropdown_title" > {props.title}
+          <img src={vector} alt="chevron-up" className={isOpen ? 'dropdown_icon' : 'up' } onClick={ () => setOpen(!isOpen )} />
       </div>
 
-      {open &&
-          <div className="dropdown_text"></div>
+      {isOpen &&
+          <div className="dropdown_text">{props.text}</div>
       }
       </div>
     );

@@ -1,25 +1,22 @@
 .apropos_contenant {
-    max-width: 1440px;
+    max-width: auto;
     height: 1000px;
+    display: flex;
+    justify-content: center;
 }
 
 .contenant_dropdown {
     position: absolute;
     width: 1023px;
-    height: 184px;
-    left: 208px;
-    top: 484px;
+    top: 384px;
 }
 
 .image_banner {
     position: absolute;
     width: 1240px;
     height: 223px;
-    left: 100px;
-    top: 152px;
     background: #000000;
     mix-blend-mode: darken;
-    opacity: 0.3;
     border-radius: 25px;
 }
 

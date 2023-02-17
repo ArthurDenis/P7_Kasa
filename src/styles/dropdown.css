@@ -3,6 +3,10 @@
     position: relative;
 }
 
+.dropdownopen {
+    margin-bottom: 40px;
+}
+
 .dropdown_title {
     position: relative;
     display: flex;
@@ -33,8 +37,7 @@
     background: #F6F6F6;
     height: auto;
     overflow: hidden;
-    padding: 20px 10px 10px 20px;
-    margin-top: 50px;
+    padding: 40px 10px 10px 20px;
     transition: all .2s ease-in;
     border-radius: 10px;
     color: #FF6060;
