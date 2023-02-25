@@ -7,7 +7,7 @@ function Box ()
     return(
             <div className="card">
                 {data.map(logement =>(
-                    <a href={`data/$logement.id`} key={logement.id}>
+                    <a href={`Logement/${logement.id}`} key={logement.id}>
                         <img src={logement.cover} alt="Photos du logement" className="Photo" />
                         <h2>{logement.title}</h2>
                     </a>

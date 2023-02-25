@@ -1,0 +1,64 @@
+.logement_contenant{
+    width:100%;
+}
+
+.informations_principales{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.en_tete{
+    width : auto;
+    display: flex;
+    justify-content: space-between;
+    width:auto;
+}
+
+.en_tete h1{
+    font-family : 'Montserrat';
+    font-style: normal;
+    font-weight : 500;
+    font-size : 36px;
+    line-height : 51px;
+    color: #FF6060;
+}
+
+.localisation p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.host{
+    display: flex;
+}
+
+.host_photo{
+    width: 64px;
+    height: 64px;
+    background: #C4C4C4;
+    border-radius: 50%;
+}
+
+.host_name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FF6060;
+    width: min-content;
+    height: 52px;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    justify-items: center;
+}
+
+.container_dropdown{
+    display:flex;
+    justify-content: space-between;
+}
