@@ -1,5 +1,5 @@
 .apropos_contenant {
-    max-width: auto;
+    max-width: 100%;
     height: 1000px;
     display: flex;
     justify-content: center;
