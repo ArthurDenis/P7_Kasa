@@ -3,8 +3,8 @@
 }
 
 body {
-  margin: 0 auto !important;
-  padding: 0 auto !important;
+  margin: 0 auto;
+  padding: 0 auto;
   font-family: montserrat,'Helvetica Neue',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,4 +20,9 @@ body {
 
 .App{
   width: 100%;
+}
+@media screen and (max-width: 540px) {
+  .App {
+    width: auto;
+  }
 }

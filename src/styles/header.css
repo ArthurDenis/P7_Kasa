@@ -1,9 +1,7 @@
 .header {
     width: 100%;
     height : 68px;
-    bottom : 5px;
     margin-top: 40px;
-    margin-bottom: 63px;
     padding-right: 100px;
     padding-left: 100px;
     display: flex;
@@ -37,4 +35,30 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 1800px) {
+    .header_nav {
+        left: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header{
+        width: auto;
+        height : 47px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+    .header_logo {
+        width: 145px;
+        height: 47px;
+    }
+    .header_nav {
+        font-size: 12px;
+        line-height: 17px;
+        width : 140px;
+        left: 60%;
+    }
 }

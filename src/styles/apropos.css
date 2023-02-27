@@ -3,6 +3,7 @@
     height: 1000px;
     display: flex;
     justify-content: center;
+    margin-top: 63px;
 }
 
 .contenant_dropdown {
@@ -20,3 +21,18 @@
     border-radius: 25px;
 }
 
+@media screen and (max-width: 540px) {
+    .image_banner{
+        width : 336px;
+        margin-left: 20px;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+    .contenant_dropdown {
+        width : 90%;
+    }
+
+    .apropos_contenant {
+        height: 1400px;
+    }
+}

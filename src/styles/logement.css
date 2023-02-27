@@ -2,6 +2,18 @@
     width:100%;
 }
 
+.carrousel_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    height: 415px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
 .informations_principales{
     margin-left: 100px;
     margin-right: 100px;
@@ -11,7 +23,7 @@
     width : auto;
     display: flex;
     justify-content: space-between;
-    width:auto;
+    height: 64px;
 }
 
 .en_tete h1{
@@ -21,6 +33,8 @@
     font-size : 36px;
     line-height : 51px;
     color: #FF6060;
+    display: flex;
+    align-items: center;
 }
 
 .localisation p{
@@ -30,10 +44,13 @@
     font-size: 18px;
     line-height: 142.6%;
     color: #FF6060;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .host{
     display: flex;
+    align-items: center;
 }
 
 .host_photo{
@@ -56,9 +73,54 @@
     align-items: flex-end;
     text-align: right;
     justify-items: center;
+    margin-right: 10px;
+}
+
+.tags_rating{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .container_dropdown{
     display:flex;
     justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container_dropdown .dropdown {
+    width: 45%;
+}
+
+.container_dropdown .dropdownopen{
+    width: 45%;
+}
+
+.dropdown_liste {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+@media screen and (max-width: 540px) {
+    .carrousel_container{
+        margin : 20px;
+        height: 255px;
+    }
+
+    .container_dropdown{
+        flex-direction:column;
+        align-items: center;
+        margin-left : 0px;
+        margin-right : 0px;
+    }
+
+    .container_dropdown .dropdownopen {
+        width: 90%;
+    }
+
+    .container_dropdown .dropdown {
+        width: 90%;
+    }
 }

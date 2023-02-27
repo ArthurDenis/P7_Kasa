@@ -17,8 +17,9 @@ const Logement = () =>
     if (!location) return <Error />
     return (
         <main className="logement_contenant">
-            <Carrousel source={location.pictures} slidesNumber={location.pictures.length} />
-
+            <div className='carrousel_container'>
+                <Carrousel source={location.pictures} slidesNumber={location.pictures.length} />
+            </div>
             <section className="informations_principales">
                 <div className="en_tete">
                     <h1>{location.title}</h1>
@@ -31,13 +32,16 @@ const Logement = () =>
                     <p>{location.location}</p>
                 </div>
             </section>
-            <Tags tags={location.tags} />
-            <Rating value={parseInt(location.rating)} />
             
+            <div className="tags_rating">
+                <Tags tags={location.tags} />
+                <Rating value={parseInt(location.rating)} />
+            </div>
+
             <div className="container_dropdown">
                 <Dropdown title="Description" text={location.description}></Dropdown>
                 <Dropdown title="Equipements" text=
-                    <ul>{location.equipments.map((equipment) => (
+                    <ul className='dropdown_liste'>{location.equipments.map((equipment) => (
                         <li key={equipment}>{equipment}</li>
                     ))}</ul>
                 ></Dropdown>

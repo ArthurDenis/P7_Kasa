@@ -1,0 +1,54 @@
+.carrousel {
+    width: 100%;
+    margin: auto;
+}
+
+.carrousel img {
+    width: 100%;
+    object-fit: cover;
+    height: 415px;
+    border-radius: 25px;
+}
+
+.arrow {
+    position: absolute;
+}
+
+.arrow-left {
+    left: 8%;
+}
+
+.arrow-right {
+    right: 8%;
+}
+
+.no-arrow {
+    content-visibility: hidden;
+}
+
+.page_count{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    right: 50%;
+    top : 425px;
+    position: absolute;
+}
+
+@media screen and (max-width: 540px) {
+    .carrousel img {
+        height : 255px;
+    }
+
+    .arrow img {
+        height : 20px;
+        width : 11px;
+    }
+
+    .page_count{
+        display: none;
+    }
+}

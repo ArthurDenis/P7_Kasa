@@ -45,3 +45,30 @@
     object-fit: cover;
     filter: invert(15%);
 }
+
+@media screen and (max-width: 540px) {
+    .card{
+        background: white;
+        padding-right: 0px;
+    }
+
+    .card a {
+        height: 255px;
+        width : 335px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .card a h2 {
+        width : 296px;
+        left: 5.88%;
+        right: 5.88%;
+        top: 73.73%;
+        bottom: 5.88%;
+    }
+
+    .Photo {
+        height: 255px;
+        width : 335px;
+    }
+}

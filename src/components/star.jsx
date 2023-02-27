@@ -1,18 +1,33 @@
 import React from 'react'
-import Etoile from '../assets/etoile.png'
-import '../styles/etoile.css'
+import etoile_vide from '../assets/etoile_vide.png'
+import etoile_pleine from '../assets/etoile_pleine.png'
 
 
-const Rating = ( { value = 0 } ) =>
-{
-    
+const Rating = (props) => {
+    const rate = Number(props.value);
+    const fullRate = [1, 2, 3, 4, 5];
+
     return (
-
-        <div className="note">
-            {[1,2,3,4,5].map(number => <img src={Etoile} color={ value >= (number + 1) ? "#FF6060" : "#E3E3E3" } key={number.toString()} alt="Note" />
+        <div className="rate">
+            {fullRate.map((score) =>
+                rate >= score ? (
+                    <img
+                        className="etoile_pleine"
+                        src={etoile_pleine}
+                        alt="étoile pleine"
+                        key={score.toString()}
+                    />) 
+                : ( <img
+                        className="etoile_vide"
+                        src={etoile_vide}
+                        alt="étoile vide"
+                        key={score.toString()}
+                    />
+                )
             )}
         </div>
-        
-    )
-}
+
+    )}
+
+
 export default Rating

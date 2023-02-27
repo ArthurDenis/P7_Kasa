@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 500px;
+    margin-top: 63px;
 }
 
 .error_logo {
@@ -31,4 +32,28 @@
     font-size: 18px;
     font-weight: 500;
     height: 26px;
+}
+@media screen and (max-width: 540px) {
+    .error {
+        width: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .error_logo {
+        width : 198px;
+        height : 99px;
+    }
+
+    .error h1{
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    }
+
+    .error a {
+        font-size : 14px;
+        height : 20px;
+    }
+
 }

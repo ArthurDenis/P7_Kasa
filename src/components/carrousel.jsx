@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import left from "../assets/fleche_retour.png";
 import right from "../assets/fleche_suivante.png";
+import "../styles/carrousel.css"
 
 const Carrousel = (props) => {
     const photo = props.source;
@@ -27,6 +28,9 @@ const Carrousel = (props) => {
                 className={onePhoto ? "no-arrow" : "arrow arrow-right"}
                 onClick={nextSlide}>
                 <img src={right} alt="next" />
+            </span>  
+            <span className="page_count">
+                {current + 1}/{length}
             </span>
             <div className="carrousel">
                 {photo.map((picture, index) => (
@@ -35,9 +39,6 @@ const Carrousel = (props) => {
                     </div>
                 ))}{" "}
             </div>
-            <span className="page-count">
-                {current + 1}/{length}
-            </span>
         </>
     );
 };
