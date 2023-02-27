@@ -50,6 +50,7 @@
     .card{
         background: white;
         padding-right: 0px;
+        padding-top: 0px;
     }
 
     .card a {

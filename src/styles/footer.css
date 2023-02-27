@@ -29,10 +29,9 @@
     right: 45.76%;
     bottom: 49.55%;    
 }
-@media screen and (max-width: 540px) {
-    .footer{
-        width : auto;
-    }
+
+
+@media screen and (max-width: 970px) {
 
     .footer img{
         left: 33.87%;
@@ -40,7 +39,6 @@
         top: 29.67%;
         bottom: 51.46%;
     }
-
     .footer p{
         top: 48.33%;
         bottom: 29.67%;

@@ -56,6 +56,11 @@ body .main_contenant {
         margin-left: 20px;
         margin-right: 20px;
         justify-content: left;
+        height : 111px;
+    }
+
+    .banner_container img{
+        height : 111px;
     }
 
     .banner_container h1 {
@@ -70,5 +75,13 @@ body .main_contenant {
         margin-left: 0px;
         margin-right : 0px;
         background: white;
+    }
+}
+
+@media screen and (min-width : 541px) and (max-width: 1080px) {
+    .banner_container h1{
+        width : 340px;
+        font-size: 28px;
+        line-height: 36px;
     }
 }

@@ -52,3 +52,10 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 1060px) {
+    .arrow img {
+        height : 40px;
+        width : 22px;
+    }
+}

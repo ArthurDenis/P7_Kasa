@@ -44,6 +44,7 @@ nav a:hover {
 }
 
 @media screen and (max-width: 540px) {
+
     .header{
         width: auto;
         height : 47px;
@@ -60,5 +61,22 @@ nav a:hover {
         line-height: 17px;
         width : 140px;
         left: 60%;
+    }
+}
+
+
+@media screen and (min-width : 541px) and (max-width: 1080px) {
+    .header{
+        width: auto;
+        height : 47px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+
+    .header_nav {
+        font-size: 16px;
+        line-height: 21px;
+        width: 150px;
     }
 }

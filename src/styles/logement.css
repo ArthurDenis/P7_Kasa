@@ -17,13 +17,16 @@
 .informations_principales{
     margin-left: 100px;
     margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .en_tete{
     width : auto;
     display: flex;
     justify-content: space-between;
-    height: 64px;
+    flex-direction: column;
 }
 
 .en_tete h1{
@@ -35,9 +38,10 @@
     color: #FF6060;
     display: flex;
     align-items: center;
+    margin : 0px;
 }
 
-.localisation p{
+.en_tete p{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -76,11 +80,9 @@
     margin-right: 10px;
 }
 
-.tags_rating{
+.rate_host{
     display: flex;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    flex-direction: column;
 }
 
 .container_dropdown{
@@ -115,6 +117,15 @@
         margin-left : 0px;
         margin-right : 0px;
     }
+    .en_tete h1{
+    font-size : 18px;
+    line-height : 26px;
+    }
+
+    .en_tete p {
+        font-size: 14px;
+        line-height: 20px;
+    }
 
     .container_dropdown .dropdownopen {
         width: 90%;
@@ -122,5 +133,65 @@
 
     .container_dropdown .dropdown {
         width: 90%;
+    }
+    .informations_principales{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .rate_host{
+        flex-direction : row-reverse;
+        justify-content: space-between;
+    }
+
+    .rate{
+        display : flex;
+        align-items: center;
+    }
+
+    .etoile{
+        width: 15px;
+        height: 15px;
+    }
+
+    .host_photo{
+        width: 32px;
+        height: 32px;
+    }
+
+    .host_name{
+        font-size: 12px;
+        line-height: 17px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .carrousel_container{
+        margin : 30px;
+    }
+
+    .informations_principales{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .en_tete h1{
+        font-size : 24px;
+        line-height : 30px;
+    }
+
+    .etoile{
+        width: 21px;
+        height: 21px;
+    }
+    .container_dropdown{
+        flex-direction:column;
+        align-items: center;
+        margin-left : 0px;
+        margin-right : 0px;
     }
 }

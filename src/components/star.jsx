@@ -12,13 +12,13 @@ const Rating = (props) => {
             {fullRate.map((score) =>
                 rate >= score ? (
                     <img
-                        className="etoile_pleine"
+                        className="etoile etoile_pleine"
                         src={etoile_pleine}
                         alt="étoile pleine"
                         key={score.toString()}
                     />) 
                 : ( <img
-                        className="etoile_vide"
+                        className="etoile etoile_vide"
                         src={etoile_vide}
                         alt="étoile vide"
                         key={score.toString()}

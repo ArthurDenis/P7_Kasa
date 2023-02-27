@@ -23,20 +23,17 @@ const Logement = () =>
             <section className="informations_principales">
                 <div className="en_tete">
                     <h1>{location.title}</h1>
+                    <p>{location.location}</p>
+                    <Tags tags={location.tags} />
+                </div>
+                <div className="rate_host">
                     <div className="host">
                         <span className="host_name">{location.host.name}</span>
                         <img src={location.host.picture} alt="Owner" className="host_photo"/>
                     </div>
-                </div>
-                <div className="localisation">
-                    <p>{location.location}</p>
+                    <Rating value={parseInt(location.rating)} />
                 </div>
             </section>
-            
-            <div className="tags_rating">
-                <Tags tags={location.tags} />
-                <Rating value={parseInt(location.rating)} />
-            </div>
 
             <div className="container_dropdown">
                 <Dropdown title="Description" text={location.description}></Dropdown>
