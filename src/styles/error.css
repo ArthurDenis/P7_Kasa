@@ -32,6 +32,8 @@
     font-weight: 500;
     height: 26px;
 }
+
+/*Media queries mobile*/
 @media screen and (max-width: 540px) {
     .error {
         width: auto;

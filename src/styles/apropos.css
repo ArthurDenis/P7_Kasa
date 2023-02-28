@@ -20,7 +20,7 @@
     mix-blend-mode: darken;
     border-radius: 25px;
 }
-
+/*Media queries mobile*/
 @media screen and (max-width: 540px) {
     .image_banner{
         width : 336px;
@@ -37,6 +37,7 @@
     }
 }
 
+/*Media queries tablette*/
 @media screen and (min-width : 541px) and (max-width: 1080px) {
     .contenant_dropdown {
         width: 530px;

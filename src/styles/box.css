@@ -46,6 +46,7 @@
     filter: invert(15%);
 }
 
+/*Media queries mobile*/
 @media screen and (max-width: 540px) {
     .card{
         background: white;
@@ -71,5 +72,13 @@
     .Photo {
         height: 255px;
         width : 335px;
+    }
+}
+/*Media queries tablette*/
+@media screen and (min-width : 541px) and (max-width: 1080px) {
+    .card {
+        background: white;
+        padding-right: 0px;
+        padding-top: 0px;
     }
 }

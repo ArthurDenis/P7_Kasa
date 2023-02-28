@@ -11,7 +11,7 @@ import Dropdown from '../components/dropdown'
 
 const Logement = () => 
 { 
-    const params = useParams()
+    const params = useParams() //Permet d'aller récupérer les données corréespondant à l'id de la page
     const location = data.find( (rental) => rental.id === params.id )
     
     if (!location) return <Error />
@@ -24,7 +24,7 @@ const Logement = () =>
                 <div className="en_tete">
                     <h1>{location.title}</h1>
                     <p>{location.location}</p>
-                    <Tags tags={location.tags} />
+                    <Tags tags={location.tags} /> {/*Le components tags est appelé et nous lui donnons la localisation des datas qu'il doit utiliser*/}
                 </div>
                 <div className="rate_host">
                     <div className="host">
@@ -36,12 +36,12 @@ const Logement = () =>
             </section>
 
             <div className="container_dropdown">
-                <Dropdown title="Description" text={location.description}></Dropdown>
-                <Dropdown title="Equipements" text=
-                    <ul className='dropdown_liste'>{location.equipments.map((equipment) => (
+                <Dropdown title="Description" text={location.description}></Dropdown> 
+                <Dropdown title="Equipements" text= 
+                    <ul className='dropdown_liste'>{location.equipments.map((equipment) => ( 
                         <li key={equipment}>{equipment}</li>
                     ))}</ul>
-                ></Dropdown>
+                ></Dropdown>{/* On va utiliser map pour aller chercher chaque équipement on construit une liste */}
             </div>
 
         </main>

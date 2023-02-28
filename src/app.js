@@ -1,3 +1,5 @@
+/* On importe React ainsi que les pages et les components Header et Footer communs à ces pages.
+Routes et Route sont importés pour avoir une application en Single Page */
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Main from './pages/Main.jsx'

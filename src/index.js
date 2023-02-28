@@ -1,3 +1,4 @@
+/* Ici nous importons le router qui est donc basé à la racine de notre App.js et englobe donc les routes qu'il contient*/
 import React from 'react';
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as  Router } from 'react-router-dom'

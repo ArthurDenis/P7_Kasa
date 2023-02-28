@@ -38,6 +38,7 @@
     position: absolute;
 }
 
+/*Media queries mobile*/
 @media screen and (max-width: 540px) {
     .carrousel img {
         height : 255px;
@@ -52,7 +53,7 @@
         display: none;
     }
 }
-
+/*Media queries tablette*/
 @media screen and (max-width: 1060px) {
     .arrow img {
         height : 40px;

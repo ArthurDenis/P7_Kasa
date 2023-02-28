@@ -25,6 +25,7 @@ body .main_contenant {
     color: #FFFFFF;
     font-family: 'Montserrat';
     font-style: normal;
+    object-fit: contain;
 }
 
 .banner_Image {
@@ -47,6 +48,7 @@ body .main_contenant {
     border-radius: 25px;
 }
 
+/*Media queries mobile*/
 @media screen and (max-width: 540px) {
 
     .banner_container{
@@ -77,11 +79,19 @@ body .main_contenant {
         background: white;
     }
 }
-
+/*Media queries tablette*/
 @media screen and (min-width : 541px) and (max-width: 1080px) {
     .banner_container h1{
         width : 340px;
         font-size: 28px;
         line-height: 36px;
+    }
+
+    .banner_container img {
+        object-fit: cover;
+    }
+
+    .gallery{
+        background: white;
     }
 }

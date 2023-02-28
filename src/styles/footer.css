@@ -30,7 +30,7 @@
     bottom: 49.55%;    
 }
 
-
+/*Media queries mobile et tablette*/
 @media screen and (max-width: 970px) {
 
     .footer img{

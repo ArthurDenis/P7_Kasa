@@ -5,11 +5,11 @@ import vector from "../assets/vector.png"
 
 function Dropdown ( props )
 {
-    const [isOpen, setOpen] = useState(false);
+    const [isOpen, setOpen] = useState(false); //Valeur d'état pour ouvrir le dropdown
 
     return (
       <div className={ "dropdown" + ( isOpen ? 'open' : '' ) }>
-      <div className="dropdown_title" > {props.title}
+      <div className="dropdown_title" alt="Titre de la partie"> {props.title}
           <img src={vector} alt="chevron-up" className={isOpen ? 'dropdown_icon' : 'up' } onClick={ () => setOpen(!isOpen )} />
       </div>
 

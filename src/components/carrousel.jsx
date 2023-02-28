@@ -6,8 +6,9 @@ import "../styles/carrousel.css"
 const Carrousel = (props) => {
     const photo = props.source;
     const length = props.slidesNumber;
-    const onePhoto = length <= 1;
+    const onePhoto = length <= 1; //permet de ne pas afficher de flèche quand il n'y a qu'une photo dans la data
 
+    //On définit la première slide et les comportements en cas de dernière et prémière photo dans la base de donnée
     const [current, setCurrent] = useState(0);
     const previousSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);

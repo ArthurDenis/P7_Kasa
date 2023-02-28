@@ -37,12 +37,14 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/*Media queries grand écran*/
 @media screen and (min-width: 1800px) {
     .header_nav {
         left: 90%;
     }
 }
 
+/*Media queries mobile*/
 @media screen and (max-width: 540px) {
 
     .header{
@@ -64,7 +66,7 @@ nav a:hover {
     }
 }
 
-
+/*Media queries tablette*/
 @media screen and (min-width : 541px) and (max-width: 1080px) {
     .header{
         width: auto;
