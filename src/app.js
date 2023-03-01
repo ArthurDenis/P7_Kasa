@@ -1,7 +1,7 @@
 /* On importe React ainsi que les pages et les components Header et Footer communs à ces pages.
 Routes et Route sont importés pour avoir une application en Single Page */
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 import Main from './pages/Main.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
@@ -17,7 +17,8 @@ const App = () => {
                 <Route path="/" element={<Main />} />
                 <Route path="/a_propos" element={<Apropos />} />
                 <Route path ="/Logement/:id" element={<Logement />} />
-                <Route path ="/error" element={<Error />} />   
+                <Route path ="/error" element={<Error />} />  
+                <Route path="*" element={<Error />}/>
             </Routes>
         <Footer />
     </div>
