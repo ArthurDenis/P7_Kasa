@@ -14,15 +14,15 @@
     position: absolute;
 }
 
-.arrow-left {
+.arrow_left {
     left: 8%;
 }
 
-.arrow-right {
+.arrow_right {
     right: 8%;
 }
 
-.no-arrow {
+.no_arrow {
     content-visibility: hidden;
 }
 
@@ -36,6 +36,10 @@
     right: 50%;
     top : 425px;
     position: absolute;
+}
+
+.no_page_count{
+    display: none;
 }
 
 /*Media queries mobile*/

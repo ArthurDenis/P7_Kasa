@@ -21,16 +21,16 @@ const Carrousel = (props) => {
     return (
         <>
             <span
-                className={onePhoto ? "no-arrow" : "arrow arrow-left"}
+                className={onePhoto ? "no_arrow" : "arrow arrow_left"}
                 onClick={previousSlide}>
                 <img src={left} alt="previous" />
             </span>
             <span
-                className={onePhoto ? "no-arrow" : "arrow arrow-right"}
+                className={onePhoto ? "no_arrow" : "arrow arrow_right"}
                 onClick={nextSlide}>
                 <img src={right} alt="next" />
             </span>  
-            <span className="page_count">
+            <span className={onePhoto ? "no_page_count" : "page_count"}>
                 {current + 1}/{length}
             </span>
             <div className="carrousel">
