@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/footer.css'
-import logo from "../assets/logo_footer.png"
+import '../styles/footer.css';
+import logo from "../assets/logo_footer.png";
 
 function Footer()
 {
@@ -10,6 +10,6 @@ function Footer()
             <img src ={logo} alt="Logo de Kasa" />
         </footer>
     )
-}
+};
 
 export default Footer
