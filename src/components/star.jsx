@@ -4,7 +4,7 @@ import etoile_pleine from '../assets/etoile_pleine.png'
 
 
 const Rating = (props) => {
-    const rate = Number(props.value); /* La value est récupéré dans la data grâce à parseInt(location.rating) sur Logement.jsx
+    const rate = props.value; /* La value est récupéré dans la data grâce à parseInt(location.rating) sur Logement.jsx
     On crée ensuite un array pour le nombre d'étoile possible*/
     const fullRate = [1, 2, 3, 4, 5];
     return (
