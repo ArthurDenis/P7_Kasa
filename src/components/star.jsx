@@ -1,6 +1,6 @@
-import React from 'react'
-import etoile_vide from '../assets/etoile_vide.png'
-import etoile_pleine from '../assets/etoile_pleine.png'
+import React from 'react';
+import etoile_vide from '../assets/etoile_vide.png';
+import etoile_pleine from '../assets/etoile_pleine.png';
 
 
 const Rating = (props) => {
@@ -10,24 +10,22 @@ const Rating = (props) => {
     return (
         <div className="rate">
             {fullRate.map((score) => 
-                rate >= score ? ( //On compare les valeurs de l'array fullRate avec la value
-                    <img
+                rate >= score ?  //On compare les valeurs de l'array fullRate avec la value
+                    ( <img
                         className="etoile etoile_pleine"
                         src={etoile_pleine}
                         alt="étoile pleine"
-                        key={score.toString()}
-                    />) 
-                : ( <img  //Si la valeur de la value est inférieur à la valeur de fullRate alors on affiche une étoile vide
+                        key={score.toString()}/>) 
+                : 
+                    ( <img  //Si la valeur de la value est inférieur à la valeur de fullRate alors on affiche une étoile vide
                         className="etoile etoile_vide"
                         src={etoile_vide}
                         alt="étoile vide"
-                        key={score.toString()}
-                    />
-                )
+                        key={score.toString()}/>)
             )}
         </div>
-
-    )}
+    )
+};
 
 
 export default Rating

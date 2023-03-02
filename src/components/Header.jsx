@@ -1,7 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom' //Link permet de faire les liens dans l'appli, se comporte comme anchor
-import '../styles/header.css'
-import logo from '../assets/logo.png'
+import {Link} from 'react-router-dom'; //Link permet de faire les liens dans l'appli, se comporte comme anchor
+import '../styles/header.css';
+import logo from '../assets/logo.png';
 
 function Header()
 {
@@ -14,6 +14,6 @@ function Header()
             </nav>
         </header>
     )
-}
+};
 
 export default Header

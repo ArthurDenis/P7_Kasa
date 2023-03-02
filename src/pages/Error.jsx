@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/error.css'
+import '../styles/error.css';
 import { Link } from "react-router-dom"; //Link permet de faire les liens dans l'appli, se comporte comme anchor
-import error from '../assets/error.png'
+import error from '../assets/error.png';
 
 function Error ()
 {
@@ -14,6 +14,6 @@ function Error ()
             </div>
         </div>
     )
-}
+};
 
 export default Error

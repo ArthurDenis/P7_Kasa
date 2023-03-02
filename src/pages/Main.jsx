@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/main.css'
-import Box from '../components/box.jsx'
-import banner from '../assets/banner.png'
+import '../styles/main.css';
+import Box from '../components/box.jsx';
+import banner from '../assets/banner.png';
 
 function Main ()
 {
@@ -18,6 +18,6 @@ function Main ()
             </div>
         </div>
     )
-}
+};
 
 export default Main

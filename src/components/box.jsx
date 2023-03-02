@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/box.css'
-import data from '../data/data.json'
+import '../styles/box.css';
+import data from '../data/data.json';
 
 function Box ()
 {
@@ -14,6 +14,6 @@ function Box ()
                 ))}
             </div>
         )
-}
+};
 
 export default Box

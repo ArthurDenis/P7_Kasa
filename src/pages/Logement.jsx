@@ -1,20 +1,19 @@
 import React from 'react';
-import '../styles/logement.css'
+import '../styles/logement.css';
 import Carrousel from "../components/carrousel";
-import Error from '../pages/Error'
-import { useParams } from 'react-router-dom'
-import data from '../data/data.json'
-import Rating from '../components/star'
-import Tags from '../components/tags'
-import Dropdown from '../components/dropdown'
+import Error from '../pages/Error';
+import { useParams } from 'react-router-dom';
+import data from '../data/data.json';
+import Rating from '../components/star';
+import Tags from '../components/tags';
+import Dropdown from '../components/dropdown';
 
 
-const Logement = () => 
+const Logement = () =>
 { 
-    const params = useParams() //Permet d'aller récupérer les données corréespondant à l'id de la page
-    const location = data.find( (rental) => rental.id === params.id )
-    
-    if (!location) return <Error />
+    const params = useParams(); //Permet d'aller récupérer les données corréespondant à l'id de la page
+    const location = data.find( (rental) => rental.id === params.id );
+    if (!location) return <Error />;
     return (
         <main className="logement_contenant">
             <div className='carrousel_container'>
@@ -34,7 +33,6 @@ const Logement = () =>
                     <Rating value={parseInt(location.rating)} />
                 </div>
             </section>
-
             <div className="container_dropdown">
                 <Dropdown title="Description" text={location.description}></Dropdown> 
                 <Dropdown title="Equipements" text= 
@@ -43,10 +41,8 @@ const Logement = () =>
                     ))}</ul>
                 ></Dropdown>{/* On va utiliser map pour aller chercher chaque équipement on construit une liste */}
             </div>
-
         </main>
-
     )
-}
+};
 
 export default Logement;
