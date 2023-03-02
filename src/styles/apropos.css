@@ -22,12 +22,13 @@
 }
 /*Media queries mobile*/
 @media screen and (max-width: 540px) {
-    .image_banner{
+    .image_banner {
         width : 336px;
         margin-left: 20px;
         margin-right: 20px;
         object-fit: cover;
     }
+    
     .contenant_dropdown {
         width : 90%;
     }

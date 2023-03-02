@@ -47,17 +47,19 @@ nav a:hover {
 /*Media queries mobile*/
 @media screen and (max-width: 540px) {
 
-    .header{
+    .header {
         width: auto;
         height : 47px;
         padding-left: 20px;
         padding-right: 20px;
         margin-top: 20px;
     }
+
     .header_logo {
         width: 145px;
         height: 47px;
     }
+
     .header_nav {
         font-size: 12px;
         line-height: 17px;
@@ -68,7 +70,7 @@ nav a:hover {
 
 /*Media queries tablette*/
 @media screen and (min-width : 541px) and (max-width: 1080px) {
-    .header{
+    .header {
         width: auto;
         height : 47px;
         padding-left: 20px;

@@ -1,8 +1,8 @@
-.logement_contenant{
+.logement_contenant {
     width:100%;
 }
 
-.carrousel_container{
+.carrousel_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@
     margin-top: 20px;
 }
 
-.informations_principales{
+.informations_principales {
     margin-left: 100px;
     margin-right: 100px;
     display: flex;
@@ -22,14 +22,14 @@
     justify-content: space-between;
 }
 
-.en_tete{
+.en_tete {
     width : auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.en_tete h1{
+.en_tete h1 {
     font-family : 'Montserrat';
     font-style: normal;
     font-weight : 500;
@@ -41,7 +41,7 @@
     margin : 0px;
 }
 
-.en_tete p{
+.en_tete p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -52,19 +52,19 @@
     margin-bottom: 0px;
 }
 
-.host{
+.host {
     display: flex;
     align-items: center;
 }
 
-.host_photo{
+.host_photo {
     width: 64px;
     height: 64px;
     background: #C4C4C4;
     border-radius: 50%;
 }
 
-.host_name{
+.host_name {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -80,12 +80,12 @@
     margin-right: 10px;
 }
 
-.rate_host{
+.rate_host {
     display: flex;
     flex-direction: column;
 }
 
-.container_dropdown{
+.container_dropdown {
     display:flex;
     justify-content: space-between;
     margin-left: 100px;
@@ -107,18 +107,19 @@
 
 /*Media queries mobile*/
 @media screen and (max-width: 540px) {
-    .carrousel_container{
+    .carrousel_container {
         margin : 20px;
         height: 255px;
     }
 
-    .container_dropdown{
+    .container_dropdown {
         flex-direction:column;
         align-items: center;
         margin-left : 0px;
         margin-right : 0px;
     }
-    .en_tete h1{
+
+    .en_tete h1 {
     font-size : 18px;
     line-height : 26px;
     }
@@ -135,34 +136,34 @@
     .container_dropdown .dropdown {
         width: 90%;
     }
-    .informations_principales{
+    .informations_principales {
         flex-direction: column;
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 20px;
     }
 
-    .rate_host{
+    .rate_host {
         flex-direction : row-reverse;
         justify-content: space-between;
     }
 
-    .rate{
+    .rate {
         display : flex;
         align-items: center;
     }
 
-    .etoile{
+    .etoile {
         width: 15px;
         height: 15px;
     }
 
-    .host_photo{
+    .host_photo {
         width: 32px;
         height: 32px;
     }
 
-    .host_name{
+    .host_name {
         font-size: 12px;
         line-height: 17px;
         align-items: center;
@@ -171,26 +172,27 @@
 
 /*Media queries tablette*/
 @media screen and (max-width: 1060px) {
-    .carrousel_container{
+    .carrousel_container {
         margin : 30px;
     }
 
-    .informations_principales{
+    .informations_principales {
         margin-left: 30px;
         margin-right: 30px;
         margin-bottom: 20px;
     }
 
-    .en_tete h1{
+    .en_tete h1 {
         font-size : 24px;
         line-height : 30px;
     }
 
-    .etoile{
+    .etoile {
         width: 21px;
         height: 21px;
     }
-    .container_dropdown{
+
+    .container_dropdown {
         flex-direction:column;
         align-items: center;
         margin-left : 0px;

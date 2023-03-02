@@ -51,7 +51,7 @@ body .main_contenant {
 /*Media queries mobile*/
 @media screen and (max-width: 540px) {
 
-    .banner_container{
+    .banner_container {
         width: auto;
         padding-left: 0px;
         padding-right: 0px;
@@ -61,7 +61,7 @@ body .main_contenant {
         height : 111px;
     }
 
-    .banner_container img{
+    .banner_container img {
         height : 111px;
     }
 
@@ -73,7 +73,7 @@ body .main_contenant {
         margin-left : 20px;
     }
 
-    .gallery{
+    .gallery {
         margin-left: 0px;
         margin-right : 0px;
         background: white;
@@ -81,7 +81,7 @@ body .main_contenant {
 }
 /*Media queries tablette*/
 @media screen and (min-width : 541px) and (max-width: 1080px) {
-    .banner_container h1{
+    .banner_container h1 {
         width : 340px;
         font-size: 28px;
         line-height: 36px;
