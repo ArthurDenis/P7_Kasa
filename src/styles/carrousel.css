@@ -24,6 +24,8 @@
 
 .no_arrow {
     content-visibility: hidden;
+    height: 0px;
+    width: 0px;
 }
 
 .page_count {
